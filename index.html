@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                <section>
+                    <h2>Listen to the tests</h2>
+                    <p>PyDay Tenerife 2018</p>
+                    <img src="img/pythonCanarias.png" width="300"/>
+                </section>
+
+				<section>
+                    <div>
+                        <span style="margin-right: 70px; margin-bottom: 30px">
+                            <img src="codesai.jpeg" width="320"/>
+                        </span>
+                        <span style="margin-right: 70px">
+                            <img src="agilecanarias.jpeg" width="160"/>
+                        </span>
+                    </div>
+                    <span style="margin-right: 90px; margin-bottom: 30px">
+                     <h3 style="display: inline">Fran Reyes -</h3>
+                    <span>
+                        <img src="twitter.png" width="80px" style="vertical-align: middle; margin-bottom: 30px"/>
+                        <h3 style="display: inline">fran_reyes</h3>
+                    </span>
+                </section>
+
+                <section>
+                    <h3>TDD cycle</h3>
+                    <img src="img/tdd-simple.svg" width="50%"/>
+                </section>
+
+				<section>
+                    <h3>Three Laws of TDD</h3>
+                    <ol>
+                        <li>You must write a failing test before you write any production code.</li>
+                        <li>You must not write more of a test than is sufficient to fail, or fail to compile.</li>
+                        <li>You must not write more production code than is sufficient to make the currently failing test pass.</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h3>TDD in Python</h3>
+                    <p><span style="color: rgb(128, 85,196)">PyTest</span> as testing tool</p>
+                    <p><span style="color: rgb(128, 85,196)">PyHamcrest</span> for improve your assertions</p>
+                    <p><span style="color: rgb(128, 85,196)">Doublex</span> for test doubles</p>
+                </section>
+
+                <section>
+                    <h3>Example test</h3>
+                    <img src="img/simple-test.png" />
+                </section>
+
+                <section>
+                    <h3>Why should I care about TDD?</h3>
+                    <p class="fragment">Focussed</p>
+                    <p class="fragment">Concrete</p>
+                    <p class="fragment">Empirical</p>
+                </section>
+
+                <section>
+                    <h3>TDD combines testing, specification and <span style="color: rgb(128, 85,196)">design</span> into one holistic activity</h3>
+                </section>
+
+                <section>
+                    <h3>Listening to failed test</h3>
+                    <img src="img/test-sum-fractions.png" />
+                    <img class="fragment" src="img/poor-error-description.png" />
+                </section>
+
+                <section>
+                    <h3>Improve your reds</h3>
+                    <img src="img/fraction-str.png" />
+                    <img src="img/improve-error-description.png" />
+                </section>
+
+                <section>
+                    <h3>Improve your reds (Matcher)</h3>
+                    <img src="img/test-with-matcher.png" />
+                    <img src="img/fraction-matcher.png" />
+                </section>
+
+                <section>
+                    <h3>Make the diagnostics clear</h3>
+                    <img src="img/feedback-on-diagnostics.svg" width="50%" />
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Listening bloated constructors</h3>
+                        <img src="img/bloated-constructor.png" />
+                    </section>
+                    <section>
+                        <h3>Listening bloated constructors</h3>
+                        <img src="img/reduce-bloated-constructor.png" />
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Constructing complex test data</h3>
+                        <img src="img/complex-data-test.png" />
+                    </section>
+                    <section>
+                        <h3>Constructing complex test data</h3>
+                        <img src="img/builder.png" />
+                    </section>
+                </section>
+                
+                <section>
+                    <h3>Hard to write a test?</h3>
+                    <img src="img/hard-to-write-a-test.svg" width="50%" />
+                </section>
+
+                <section>
+                    <blockquote>We don't just ask ourselves how to test it, but also why is it difficult to test</blockquote>
+                    <p>GOOS - Steve Freeman and Nat Pryce</p>
+                </section>
+
+                <section>
+                    <h3>The End</h3>
+                    <img src="img/end.gif" />
+                </section>
+
+                <section>
+                    <h3>References</h3>
+                    <p><a href="https://www.codesai.com/2018/06/improving-your-reds">Improving your reds - Codesai</a></p>
+                    <p><a href="http://www.growing-object-oriented-software.com/index.html">Growing Object-Oriented Software Guided by Tests</a></p>
+                    <p><a href="http://www.mockobjects.com/2007/04/test-smell-bloated-constructor.html">Test Smell: Bloated Constructor</a></p>
+                    <p><a href="https://www.youtube.com/watch?v=04x0stqD9f0">Steve Freeman - Keynote: Why everyone should care about TDD in CAS Vitoria </a></p>
+                </section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
